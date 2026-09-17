@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  k6:
+    image: grafana/k6:latest
+    container_name: k6_load_tester
+    volumes:
+      - ./scripts:/scripts
+    environment:
+      - TARGET_URL=
+      - VUS=20
+      - DURATION=5m
+
+    command: run /scripts/load_test.js
+
+    restart: "no"
