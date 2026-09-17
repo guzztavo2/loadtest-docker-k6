@@ -132,11 +132,11 @@ Persist results by mounting a results volume and exporting k6 outputs to JSON or
 
 ## Troubleshooting and tips
 
-- ** No traffic observed ** — Confirm `TARGET_URL` is set and reachable from the environment where Docker runs.
-- ** Authentication required ** — Add headers or authentication logic to load_test.js and mount secrets securely in CI.
-- ** Collect results ** — Modify the `command` to include `--out json=/results/result.json` and mount a `./results` folder to persist - output.
-- ** Increase concurrency ** — Raise `VUS` gradually and monitor the target system and network.
-- ** Use scenarios ** — For more complex patterns, replace simple `vus`/`duration` with k6 scenarios in the script.
+- **No traffic observed** — Confirm `TARGET_URL` is set and reachable from the environment where Docker runs.
+- **Authentication required** — Add headers or authentication logic to load_test.js and mount secrets securely in CI.
+- **Collect results** — Modify the `command` to include `--out json=/results/result.json` and mount a `./results` folder to persist - output.
+- **Increase concurrency** — Raise `VUS` gradually and monitor the target system and network.
+- **Use scenarios** — For more complex patterns, replace simple `vus`/`duration` with k6 scenarios in the script.
 
 ---
 
