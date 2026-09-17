@@ -1,6 +1,7 @@
 # loadtest-docker-k6
 
 A minimal, **Dockerized k6 load** test template that runs a configurable k6 script inside a container. Set the **TARGET_URL**, **VUS**, and **DURATION** and run the test locally or in CI using Docker Compose.
+
 ---
 ## Quickstart
 1. Edit `docker-compose.yml` and set the environment variables `TARGET_URL`, `VUS`, and `DURATION`.
